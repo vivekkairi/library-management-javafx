@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="#-fx-background-color: #777D83;" styleClass="null" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <TextField fx:id="txtSearch" layoutX="31.0" layoutY="140.0" prefHeight="26.0" prefWidth="364.0" promptText="Enter search query" style="-fx-cursor: hand;" />
+    <Button fx:id="btnSearch" layoutX="419.0" layoutY="140.0" mnemonicParsing="false" onAction="#searchPage" style="-fx-cursor: hand;" text="Search" />
+    <RadioButton fx:id="btnTitle" layoutX="31.0" layoutY="191.0" mnemonicParsing="false" selected="true" style="-fx-cursor: hand;" text="Title">
+      <toggleGroup>
+        <ToggleGroup fx:id="radioSearch" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="btnAuthor" layoutX="122.0" layoutY="191.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="Author" toggleGroup="$radioSearch" />
+    <Text fill="#452b83" fontSmoothingType="LCD" layoutX="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JUST BOOKS LIBRARY" textAlignment="CENTER" wrappingWidth="471.1640319824219" AnchorPane.topAnchor="15.0">
+      <font>
+        <Font name="Cantarell Extra Bold" size="45.0" />
+      </font>
+    </Text>
+    <Text layoutX="30.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selection Criteria:">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Text>
+    <Button fx:id="btnClear" layoutX="499.0" layoutY="140.0" mnemonicParsing="false" onAction="#clearInput" style="-fx-cursor: hand;" text="Clear" />
+    <Button fx:id="btnAdminLogin" layoutX="301.0" layoutY="333.0" mnemonicParsing="false" onAction="#loginPage" style="-fx-cursor: hand;" text="Admin Login" />
+    <Text layoutX="31.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the phrases you would like to search upon. " wrappingWidth="874.18017578125" />
+    <Text layoutX="31.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You may restrict the search by selecting the fields from the selection criteria" />
+    <Button fx:id="btnIssue" contentDisplay="CENTER" layoutX="30.0" layoutY="333.0" mnemonicParsing="false" onAction="#issuePage" style="-fx-cursor: hand;" text="Issue Book" textAlignment="CENTER" />
+    <Button fx:id="btnReturn" layoutX="164.0" layoutY="333.0" mnemonicParsing="false" onAction="#returnPage" style="-fx-cursor: hand;" text="Return Book" />
+    <Text layoutX="296.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Those who read are those who lead...">
+      <effect>
+        <DropShadow />
+      </effect>
+      <font>
+        <Font name="System Italic" size="14.0" />
+      </font>
+    </Text>
+    <ImageView fx:id="issueImg" fitHeight="75.0" fitWidth="75.0" layoutX="39.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/issue.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="461.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/dev.png" />
+      </image>
+    </ImageView>
+    <Button id="abtDev" fx:id="btnabtDev" layoutX="432.0" layoutY="333.0" mnemonicParsing="false" onAction="#abtDev" style="-fx-cursor: hand;" text="About Developers" />
+    <ImageView fitHeight="74.99990000000253" fitWidth="74.99990000000253" layoutX="314.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/admin.png" />
+      </image>
+    </ImageView>
+    <ComboBox fx:id="type" layoutX="288.0" layoutY="187.0" prefWidth="150.0" style="-fx-cursor: hand;" />
+    <Label layoutX="203.0" layoutY="191.0" text="Department:" />
+    <ImageView id="issueImg" fitHeight="75.0" fitWidth="75.0" layoutX="193.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/RETURN.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/justbooks50.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

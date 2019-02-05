@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="566.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.addStudentController">
+  <children>
+    <Text fill="#452b83" layoutX="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student Information" AnchorPane.topAnchor="15.0">
+      <font>
+        <Font name="Cantarell Extra Bold" size="45.0" />
+      </font>
+    </Text>
+    <Text layoutX="90.0" layoutY="115.0" scaleX="0.7356591154454917" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+    <Text layoutX="112.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" />
+    <Text layoutX="112.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" />
+    <Text layoutX="112.0" layoutY="211.0" scaleX="1.0" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+    <Text layoutX="113.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+    <TextField fx:id="txtStudentId" layoutX="224.0" layoutY="117.0" prefWidth="200.0" />
+    <TextField fx:id="txtStudentName" layoutX="224.0" layoutY="158.0" prefWidth="200.0" />
+    <ComboBox fx:id="dept" layoutX="225.0" layoutY="196.0" prefWidth="200.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="year" layoutX="225.0" layoutY="233.0" prefWidth="200.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="btnAdd" layoutX="242.0" layoutY="298.0" mnemonicParsing="false" onAction="#setBtnAdd" text="Add" />
+    <Button id="btnCancel" fx:id="btnReset" layoutX="338.0" layoutY="298.0" mnemonicParsing="false" onAction="#setBtnReset" text="Reset" />
+  </children>
+</AnchorPane>

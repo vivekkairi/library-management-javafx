@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="566.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.listStudentsController">
+  <children>
+    <Text fill="#452b83" layoutX="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Of Students" AnchorPane.topAnchor="15.0">
+      <font>
+        <Font name="Cantarell Extra Bold" size="45.0" />
+      </font>
+    </Text>
+    <TableView fx:id="allStudents" layoutX="7.0" layoutY="91.0" prefHeight="309.0" prefWidth="553.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Sr.No." fx:id="colSrNo" />
+        <TableColumn prefWidth="137.0" text="Student ID" fx:id="colStudentId" />
+        <TableColumn prefWidth="133.0" text="Student name" fx:id="colStudentName" />
+        <TableColumn prefWidth="97.0" text="Department" fx:id="colDepartment" />
+        <TableColumn prefWidth="110.0" text="Year" fx:id="colYear" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

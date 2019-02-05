@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="566.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.issuedBookController">
+  <children>
+    <Text fill="#452b83" layoutX="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issued Books" AnchorPane.topAnchor="15.0">
+      <font>
+        <Font name="Cantarell Extra Bold" size="45.0" />
+      </font>
+    </Text>
+    <TableView fx:id="allIssued" layoutX="7.0" layoutY="76.0" prefHeight="324.0" prefWidth="552.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="64.0" text="Sr. No." fx:id="colSrNo" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="96.0" text="Book ID" fx:id="colBookId" />
+        <TableColumn maxWidth="5000.0" minWidth="0.0" prefWidth="137.0" text="Book Name" fx:id="colBookName" />
+        <TableColumn prefWidth="130.0" text="Student ID" fx:id="colStudentID" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="124.0" text="Date of Issue" fx:id="colDoi" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

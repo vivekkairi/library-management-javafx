@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="LibraryManagement.jnlp">
+    <information>
+        <title>Main</title>
+        <vendor>Unknown</vendor>
+        <description>Main</description>
+        <offline-allowed/>
+    </information>
+    <update check="background"/>
+    <resources>
+        <j2se version="10.0.2+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="LibraryManagement.jar" size="319360" download="eager"/>
+        <jar href="sample/libs/bridj-0.7.0.jar" size="935929" download="eager"/>
+        <jar href="sample/libs/commons-codec-1.6.jar" size="232771" download="eager"/>
+        <jar href="sample/libs/commons-logging-1.1.1.jar" size="60686" download="eager"/>
+        <jar href="sample/libs/httpclient-4.2.3.jar" size="433071" download="eager"/>
+        <jar href="sample/libs/httpcore-4.2.2.jar" size="223571" download="eager"/>
+        <jar href="sample/libs/httpmime-4.2.3.jar" size="26477" download="eager"/>
+        <jar href="sample/libs/javase-3.3.3.jar" size="41671" download="eager"/>
+        <jar href="sample/libs/slf4j-api-1.7.2.jar" size="26083" download="eager"/>
+        <jar href="sample/libs/slf4j-nop-1.7.25.jar" size="4007" download="eager"/>
+        <jar href="sample/libs/sqlite-jdbc-3.16.1.jar" size="6161579" download="eager"/>
+        <jar href="sample/libs/webcam-capture-0.3.10.jar" size="409084" download="eager"/>
+        <jar href="sample/libs/webcam-capture-driver-ipcam-0.3.10.jar" size="35111" download="eager"/>
+        <jar href="sample/libs/zxing-core-1.6.jar" size="330307" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="600" height="400" main-class="sample.Main" name="Main"/>
+</jnlp>
+
